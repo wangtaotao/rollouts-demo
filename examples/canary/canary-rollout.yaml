@@ -30,6 +30,9 @@ spec:
       dynamicStableScale: true
       canaryService: canary-demo-preview
       stableService: canary-demo
+      trafficRouting:
+        traefik:
+          weightedTraefikServiceName: traefikservice
       steps:
       - setWeight: 20
       - pause: {}
