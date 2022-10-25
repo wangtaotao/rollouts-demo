@@ -27,7 +27,7 @@ spec:
             cpu: 5m
   strategy:
     canary:
-      dynamicStableScale: true
+      dynamicStableScale: false
       canaryService: canary-demo-preview
       stableService: canary-demo
       trafficRouting:
